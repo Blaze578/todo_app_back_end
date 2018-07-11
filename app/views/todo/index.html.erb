@@ -1,1 +1,37 @@
-<input input type = "checkbox">
+ <html>
+    <head>
+        <Title></Title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <P><b>Check List</b></P>
+        <ul>
+            <li> 
+            <input input type = "checkbox"> 
+                <a href = "show.html">Wake Up</a> 
+                <span class="Box-one">2 Pomodoros</span>
+            </li>
+            <li>
+            <input input type = "checkbox"> 
+            <a href = "show.html">Eat Breakfast</a>
+            <span class = "Box-two">1 Pomodoros </span>
+            <li>
+            <input input type = "checkbox"> 
+                <a href = "show.html"> Workout</a>
+                <span class = "time">3 Pomodoros</span>
+            </li>
+            <li>
+            <input input type = "checkbox"> 
+                <a href = "show.html"> Eat Lunch</a>
+                <span class = "time"> <%=6+1-%> </span>
+            </li>
+        </ul> 
+<div id = "to-do-block">
+        <input class="text-input" id="add-a-new-to-do" type = "text" placeholder = "add a new to do">
+        <input class="text-input" id="add-new-pomodoros" type = "number" placeholder = "add new pomodoros"> 
+        <input class="text-input" id= "add-new-todo-button" type = "submit" value = "add to do">
+    </div>
+    </body>
+</html>
