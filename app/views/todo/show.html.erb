@@ -1,6 +1,5 @@
 <h3>todo #<%= params[:id]%></h3>
-<h2> <%=@todo_description %> </h2>
-<span class = "pomodoro-estimate"> 
-<%= @todo_pomodoro_estimate%> </span>
-<a href = "#"> edit </a>
+<h2> <%= @todo.description %> </h2>
+<span class = "pomodoro_est"> <h3> <%=@todo.pomodoro_estimate%> </span>  </h3>
+<a href = "#"> Edit </a>
 <a href = "../index"> cancel </a>

@@ -14,3 +14,24 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/*global $*/
+
+$(document).ready(function(){
+    $("#add-new-todo-button").click(function(){
+        var todoBlock = $(this).closest("#to-do-block")
+        var description = todoBlock.find("#add-a-new-to-do")
+        var pomodoroEstimate = todoBlock.find("#add-new-pomodoros")
+        $("ul").append("<li> <input type ='checkbox'/><a href='#'>" + description.val() + "</a><span class='pomodoro-estimate'> " + pomodoroEstimate.val() + " pomodoros </span> </li>")
+       description.val(" ")
+       pomodoroEstimate.val(" ")
+    })
+})
+
+$(document).ready(function(){
+    $("ul").on("click","input[type = checkbox]",
+    function(){
+        $(this).closest("li").toggleClass("completed-todo")
+    })
+})
+
